@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Mar  6 19:02:01 2024
+# Process ID: 6980
+# Current directory: D:/Xilinx/Project/200t/AM_demodulation
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19908 D:\Xilinx\Project\200t\AM_demodulation\AM_demodulation.xpr
+# Log file: D:/Xilinx/Project/200t/AM_demodulation/vivado.log
+# Journal file: D:/Xilinx/Project/200t/AM_demodulation\vivado.jou
+# Running On: Blessing, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34142 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx/Project/200t/AM_demodulation/AM_demodulation.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+place_ports {am_data[9]} K4
+place_ports {am_data[8]} L1
+place_ports {am_data[7]} M1
+place_ports {am_data[6]} J2
+place_ports {am_data[5]} K2
+place_ports {am_data[4]} J1
+place_ports {am_data[3]} K1
+place_ports {am_data[2]} G2
+place_ports {am_data[1]} H2
+place_ports {am_data[0]} F1
+place_ports {dac_data[13]} U18
+place_ports {dac_data[12]} U17
+place_ports {dac_data[11]} V19
+place_ports {dac_data[10]} V18
+place_ports {dac_data[9]} AB22
+place_ports {dac_data[8]} AB21
+place_ports {dac_data[7]} AA21
+place_ports {dac_data[6]} AA20
+place_ports {dac_data[5]} AB20
+place_ports {dac_data[4]} AA19
+place_ports {dac_data[3]} Y19
+place_ports {dac_data[2]} Y18
+place_ports {dac_data[1]} AB18
+place_ports {dac_data[0]} AA18
+place_ports adc_clk G1
+place_ports dac_clk U20
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1

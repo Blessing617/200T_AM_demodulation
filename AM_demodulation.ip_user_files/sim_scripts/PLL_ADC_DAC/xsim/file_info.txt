@@ -1,0 +1,3 @@
+PLL_ADC_DAC_clk_wiz.v,verilog,xil_defaultlib,../../../../AM_demodulation.gen/sources_1/ip/PLL_ADC_DAC/PLL_ADC_DAC_clk_wiz.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+PLL_ADC_DAC.v,verilog,xil_defaultlib,../../../../AM_demodulation.gen/sources_1/ip/PLL_ADC_DAC/PLL_ADC_DAC.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+glbl.v,Verilog,xil_defaultlib,glbl.v

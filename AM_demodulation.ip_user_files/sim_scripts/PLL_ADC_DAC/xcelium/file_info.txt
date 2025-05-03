@@ -1,0 +1,5 @@
+xpm_cdc.sv,systemverilog,xpm,D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+xpm_VCOMP.vhd,vhdl,xpm,D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_VCOMP.vhd,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+PLL_ADC_DAC_clk_wiz.v,verilog,xil_defaultlib,../../../../AM_demodulation.gen/sources_1/ip/PLL_ADC_DAC/PLL_ADC_DAC_clk_wiz.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+PLL_ADC_DAC.v,verilog,xil_defaultlib,../../../../AM_demodulation.gen/sources_1/ip/PLL_ADC_DAC/PLL_ADC_DAC.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+glbl.v,Verilog,xil_defaultlib,glbl.v

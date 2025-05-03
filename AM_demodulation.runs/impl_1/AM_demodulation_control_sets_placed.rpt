@@ -1,0 +1,124 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar  6 19:06:17 2024
+| Host         : Blessing running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file AM_demodulation_control_sets_placed.rpt
+| Design       : AM_demodulation
+| Device       : xc7a200t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    46 |
+|    Minimum number of control sets                        |    46 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   102 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    46 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |    35 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             455 |          104 |
+| No           | No                    | Yes                    |              11 |            3 |
+| No           | Yes                   | No                     |              28 |            7 |
+| Yes          | No                    | No                     |             140 |           36 |
+| Yes          | No                    | Yes                    |              14 |            7 |
+| Yes          | Yes                   | No                     |              10 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|    Clock Signal    |                                                                    Enable Signal                                                                    |                                               Set/Reset Signal                                               | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_50M_IBUF_BUFG |                                                                                                                                                     | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[10].address_src[2] |                1 |              4 |         4.00 |
+|  clk_50M_IBUF_BUFG |                                                                                                                                                     | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[5].address_src[2]  |                2 |              4 |         2.00 |
+|  clk_50M_IBUF_BUFG |                                                                                                                                                     | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[7].address_src[2]  |                1 |              4 |         4.00 |
+|  clk_50M_IBUF_BUFG |                                                                                                                                                     | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[8].address_src[2]  |                1 |              5 |         5.00 |
+|  clk_50M_IBUF_BUFG |                                                                                                                                                     | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[6].address_src[2]  |                1 |              5 |         5.00 |
+|  clk_50M_IBUF_BUFG |                                                                                                                                                     | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[4].address_src[2]  |                1 |              6 |         6.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/base_en_cntrl                                                                              |                                                                                                              |                2 |              6 |         3.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[6].i_delay/g_semi_parallel_and_smac.cntrl[0]_2[0] |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[3].cntrl_src[7]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[7].i_delay/D[0]                                   |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[3].cntrl_src[6]                                           |                                                                                                              |                3 |             10 |         3.33 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[5].cntrl_src[3]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[5].cntrl_src[6]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[5].cntrl_src[7]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[4].cntrl_src[7]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[4].cntrl_src[3]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[6].cntrl_src[3]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[4].cntrl_src[6]                                           |                                                                                                              |                3 |             10 |         3.33 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[7].cntrl_src[3]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[8].cntrl_src[6]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[7].cntrl_src[6]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[6].cntrl_src[6]                                           |                                                                                                              |                3 |             10 |         3.33 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[6].cntrl_src[7]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[9].cntrl_src[3]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[9].cntrl_src[6]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[9].cntrl_src[7]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[7].cntrl_src[7]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[8].cntrl_src[3]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[8].cntrl_src[7]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[10].cntrl_reg_n_0_[10][3]                                 |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[10].cntrl_reg_n_0_[10][7]                                 |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/we_gen_cntrl                                                                               |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[2].cntrl_src[3]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[10].cntrl_src[6]                                          |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[10].cntrl_src[7]                                          |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[10].cntrl_src[3]                                          |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[2].cntrl_src[7]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[2].cntrl_src[6]                                           |                                                                                                              |                3 |             10 |         3.33 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/rfd_int                                                                                    |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[3].cntrl_src[3]                                           |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/wr_enable                                            |                                                                                                              |                2 |             10 |         5.00 |
+|  clk_50M_IBUF_BUFG |                                                                                                                                                     | cnt[9]_i_2_n_0                                                                                               |                3 |             11 |         3.67 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/latch_op                                               |                                                                                                              |                6 |             14 |         2.33 |
+|  clk_50M_IBUF_BUFG | u_fir_lowpass_25k/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[10].cntrl_reg_n_0_[10][8]                                 |                                                                                                              |                2 |             20 |        10.00 |
+|  clk_50M_IBUF_BUFG | fir_clk_reg_n_0                                                                                                                                     | cnt[9]_i_2_n_0                                                                                               |               10 |             24 |         2.40 |
+|  clk_50M_IBUF_BUFG |                                                                                                                                                     |                                                                                                              |              104 |            464 |         4.46 |
++--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

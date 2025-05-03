@@ -1,0 +1,2 @@
+fir_lowpass_25k.vhd,vhdl,xil_defaultlib,../../../../AM_demodulation.gen/sources_1/ip/fir_lowpass_25k/sim/fir_lowpass_25k.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "../../../ipstatic" \
+"../../../../AM_demodulation.gen/sources_1/ip/PLL_ADC_DAC/PLL_ADC_DAC_clk_wiz.v" \
+"../../../../AM_demodulation.gen/sources_1/ip/PLL_ADC_DAC/PLL_ADC_DAC.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

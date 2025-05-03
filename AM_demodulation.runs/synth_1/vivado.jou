@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Feb 20 14:24:49 2024
+# Process ID: 3040
+# Current directory: D:/Xilinx/Project/200t/AM_demodulation/AM_demodulation.runs/synth_1
+# Command line: vivado.exe -log AM_demodulation.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AM_demodulation.tcl
+# Log file: D:/Xilinx/Project/200t/AM_demodulation/AM_demodulation.runs/synth_1/AM_demodulation.vds
+# Journal file: D:/Xilinx/Project/200t/AM_demodulation/AM_demodulation.runs/synth_1\vivado.jou
+# Running On: Blessing, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34142 MB
+#-----------------------------------------------------------
+source AM_demodulation.tcl -notrace
